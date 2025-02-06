@@ -25,6 +25,9 @@ int main() {
     //Pontos turísticos
     printf("Quantos pontos turisticos para visitar: ");
     scanf("%d",&pontosTuristicos);
+    //calculando a densidade populacional e o pib per capto
+    float densidadePopulacional = populacao / area;
+    float pibPercapto = pib / populacao;
 
     //imprimindo os dados
     printf("-----------------------------\n");
@@ -33,7 +36,9 @@ int main() {
     printf("A populacao e: %d habitantes\n",populacao);
     printf("A area e: %.2f quilometros quadrados\n",area);
     printf("O PIB da cidade e: %.2f\n",pib);
-    printf("A cidade tem : %d pontos turisticos",pontosTuristicos);
+    printf("A cidade tem : %d pontos turisticos\n",pontosTuristicos);
+    printf("A densidade populacional e de: %.2f pessoas por quilometros quadrados\n",densidadePopulacional);
+    printf("O PIB percapto da cidade e: %.2f reais por habitantes",pibPercapto);
 
     return 0;
 }
